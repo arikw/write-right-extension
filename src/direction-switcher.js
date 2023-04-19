@@ -58,8 +58,8 @@ function handleKeydown(event) {
 function handleInput(event) {
   // Get the element that triggered the event
   let element = event.target;
-  // Check if the element is editable and has auto detection enabled
-  if (isEditable(element) && element.dataset.auto !== "false") {
+  // Check if the element is editable
+  if (isEditable(element)) {
     // Get the value of the element
     let value = getValue(element);
     // Check if the value is empty
@@ -67,19 +67,22 @@ function handleInput(event) {
       // Re-enable auto detection
       element.dataset.auto = "true";
     } else {
-      // Find the first word character in the value
-      let match = value.match(/\p{L}/u);
-      // Check if there is a match
-      if (match) {
-        // Get the first word character
-        let char = match[0];
-        // Check if it is an RTL character
-        if (isRTL(char)) {
-          // Set the direction to rtl
-          setDirection(element, "rtl");
-        } else {
-          // Set the direction to ltr
-          setDirection(element, "ltr");
+      // Check if auto detection is enabled
+      if (element.dataset.auto !== "false") {
+        // Find the first word character in the value
+        let match = value.match(/\p{L}/u);
+        // Check if there is a match
+        if (match) {
+          // Get the first word character
+          let char = match[0];
+          // Check if it is an RTL character
+          if (isRTL(char)) {
+            // Set the direction to rtl
+            setDirection(element, "rtl");
+          } else {
+            // Set the direction to ltr
+            setDirection(element, "ltr");
+          }
         }
       }
     }
