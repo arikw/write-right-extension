@@ -1,18 +1,18 @@
 // A function that checks if a character is an RTL character
 function isRTL(char) {
   // The range of unicode code points for RTL scripts
-  const rtlRange = new RegExp([
-    "\u0590-\u05FF", // Hebrew
-    "\u0600-\u06FF", // Arabic
-    "\u0700-\u074F", // Syriac
-    "\u0750-\u077F", // Arabic Supplement
-    "\u0780-\u07BF", // Thaana
-    "\u08A0-\u08FF", // Arabic Extended-A
-    "\uFB1D-\uFDFF", // Hebrew Presentation Forms and Arabic Presentation Forms-A
-    "\uFE70-\uFEFF", // Arabic Presentation Forms-B
-    "\U00010E60-\U00010E7F", // Rumi Numeral Symbols
-    "\U0001EE00-\U0001EEFF" // Arabic Mathematical Alphabetic Symbols
-  ].join(""), "");
+  const rtlRange = new RegExp("[" +
+    "\\u0590-\\u05FF" + // Hebrew
+    "\\u0600-\\u06FF" + // Arabic
+    "\\u0700-\\u074F" + // Syriac
+    "\\u0750-\\u077F" + // Arabic Supplement
+    "\\u0780-\\u07BF" + // Thaana
+    "\\u08A0-\\u08FF" + // Arabic Extended-A
+    "\\uFB1D-\\uFDFF" + // Hebrew Presentation Forms and Arabic Presentation Forms-A
+    "\\uFE70-\\uFEFF" + // Arabic Presentation Forms-B
+    "\\U00010E60-\\U00010E7F" + // Rumi Numeral Symbols
+    "\\U0001EE00-\\U0001EEFF" + // Arabic Mathematical Alphabetic Symbols
+  "]", "u");
   return rtlRange.test(char);
 }
 
