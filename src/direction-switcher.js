@@ -12,12 +12,22 @@ function setDirection(element, dir) {
   console.log(`Direction switched to ${dir}`); // Log to the console
 }
 
+// A function that checks if an element is editable
+function isEditable(element) {
+  return element.isContentEditable || element.tagName === "INPUT" || element.tagName === "TEXTAREA";
+}
+
+// A function that gets the value of an element
+function getValue(element) {
+  return element.value || element.textContent;
+}
+
 // A function that handles the keydown event on an element
 function handleKeydown(event) {
   // Get the element that triggered the event
   let element = event.target;
   // Check if the element is editable
-  if (element.isContentEditable || element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+  if (isEditable(element)) {
     // Check if the user pressed the right control and right shift keys
     if (event.ctrlKey && event.shiftKey && event.location === 2) {
       // Set the direction to rtl and disable auto detection
@@ -38,9 +48,9 @@ function handleInput(event) {
   // Get the element that triggered the event
   let element = event.target;
   // Check if the element is editable and has auto detection enabled
-  if ((element.isContentEditable || element.tagName === "INPUT" || element.tagName === "TEXTAREA") && element.dataset.auto !== "false") {
+  if (isEditable(element) && element.dataset.auto !== "false") {
     // Get the value of the element
-    let value = element.value || element.textContent;
+    let value = getValue(element);
     // Check if the value is empty
     if (value === "") {
       // Re-enable auto detection
