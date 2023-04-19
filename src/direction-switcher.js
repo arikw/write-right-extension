@@ -22,6 +22,12 @@ function getValue(element) {
   return element.value || element.textContent;
 }
 
+// A constant for the right location of a key
+const RIGHT = KeyboardEvent.DOM_KEY_LOCATION_RIGHT;
+
+// A constant for the left location of a key
+const LEFT = KeyboardEvent.DOM_KEY_LOCATION_LEFT;
+
 // A function that handles the keydown event on an element
 function handleKeydown(event) {
   // Get the element that triggered the event
@@ -29,13 +35,13 @@ function handleKeydown(event) {
   // Check if the element is editable
   if (isEditable(element)) {
     // Check if the user pressed the right control and right shift keys
-    if (event.ctrlKey && event.shiftKey && event.location === 2) {
+    if (event.ctrlKey && event.shiftKey && event.location === RIGHT) {
       // Set the direction to rtl and disable auto detection
       setDirection(element, "rtl");
       element.dataset.auto = "false";
     }
     // Check if the user pressed the left control and left shift keys
-    if (event.ctrlKey && event.shiftKey && event.location === 1) {
+    if (event.ctrlKey && event.shiftKey && event.location === LEFT) {
       // Set the direction to ltr and disable auto detection
       setDirection(element, "ltr");
       element.dataset.auto = "false";
