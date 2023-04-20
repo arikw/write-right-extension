@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "WriteRight",
   "version": "1.0",
-  "description": "Detects the written language and sets the writing direction to RTL/LTR. Allows overrides.",
+  "description": "Detects the written language and sets the writing direction to RTL/LTR",
   "permissions": [],
   "content_scripts": [
     {
