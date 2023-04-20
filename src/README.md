@@ -11,7 +11,10 @@ WriteRight is a chrome extension that automatically sets the writing direction o
 
 ## Use Cases
 
-WriteRight is especially useful for users who need to switch between different writing directions frequently. For example, on Windows, users can change the writing direction to LTR or RTL using CTRL + LEFT or RIGHT SHIFT shortcuts. This feature is missing from Chrome on Linux, but WriteRight enables it. WriteRight also automatically sets the writing direction in webpages that align the text to a fixed side. For example, in Google's website, the search field is fixed to LTR, but WriteRight can change it to RTL if needed.
+WriteRight is especially useful for users who need to switch between different writing directions frequently. Some examples are:
+
+- On Windows, users can change the writing direction to LTR or RTL using CTRL + LEFT or RIGHT SHIFT shortcuts. This feature is missing from Chrome on Linux, but WriteRight enables it.
+- WriteRight also automatically sets the writing direction in webpages that align the text to a fixed side. For example, in Google's website, the search field is fixed to LTR, but WriteRight can change it to RTL if needed.
 
 ## Installation
 
