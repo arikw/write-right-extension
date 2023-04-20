@@ -1,5 +1,7 @@
 # WriteRight
 
+![logo](src/icons/128.png)
+
 WriteRight is a chrome extension that automatically sets the writing direction of input elements and allows the user to override it with keyboard shortcuts.
 
 ## Features
