@@ -26,7 +26,7 @@ After installing WriteRight, you can use it on any webpage that has input elemen
 
 ## Development
 
-WriteRight was generated using Bing's GPT, a powerful natural language processing model that can create various types of content. The extension's source files are available on [Github](https://github.com/arikw/write-right-extension), where you can also report issues or suggest improvements.
+WriteRight was generated using Bing's GPT, a powerful natural language processing model that can create various types of content. [Learn more about the development process here.](https://github.com/arikw/write-right-extension/blob/master/docs/development.md)
 
 ## License
 
