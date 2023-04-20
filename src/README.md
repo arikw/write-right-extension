@@ -18,7 +18,7 @@ WriteRight is especially useful for users who need to switch between different w
 
 ## Installation
 
-You can install WriteRight from the [Chrome webstore](https://chrome.google.com/webstore/category/extensions) or from [Github](https://github.com/WriteRight/WriteRight).
+You can install WriteRight from the [Chrome webstore](https://chrome.google.com/webstore/detail/writeright/gleiglfcmildnecmodgoeijleblhobjk) or from [Github](https://github.com/arikw/write-right-extension).
 
 ## Usage
 
@@ -26,8 +26,8 @@ After installing WriteRight, you can use it on any webpage that has input elemen
 
 ## Development
 
-WriteRight was generated using Bing's GPT, a powerful natural language processing model that can create various types of content. The extension's source files are available on [Github](https://github.com/WriteRight/WriteRight), where you can also report issues or suggest improvements.
+WriteRight was generated using Bing's GPT, a powerful natural language processing model that can create various types of content. The extension's source files are available on [Github](https://github.com/arikw/write-right-extension), where you can also report issues or suggest improvements.
 
 ## License
 
-WriteRight is licensed under the MIT license. See [LICENSE](https://github.com/WriteRight/WriteRight/blob/main/LICENSE) for more details.
+WriteRight is licensed under the MIT license. See [LICENSE](https://github.com/arikw/write-right-extension/blob/main/LICENSE) for more details.
