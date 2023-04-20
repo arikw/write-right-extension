@@ -30,4 +30,4 @@ WriteRight was generated using Bing's GPT, a powerful natural language processin
 
 ## License
 
-WriteRight is licensed under the MIT license. See [LICENSE](https://github.com/arikw/write-right-extension/blob/main/LICENSE) for more details.
+WriteRight is licensed under the MIT license. See [LICENSE](https://github.com/arikw/write-right-extension/blob/master/LICENSE) for more details.
