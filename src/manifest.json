@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "WriteRight",
   "version": "1.0",
-  "description": "An extension that automatically sets the writing direction of input elements and allows the user to override it with keyboard shortcuts.",
+  "description": "Automatically sets and overrides the writing direction of input elements.",
   "permissions": [],
   "content_scripts": [
     {
