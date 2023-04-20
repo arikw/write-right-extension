@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "WriteRight",
   "version": "1.0",
-  "description": "Automatically sets and overrides the writing direction of input elements.",
+  "description": "Detects the written language and sets the writing direction to RTL/LTR. Allows overrides.",
   "permissions": [],
   "content_scripts": [
     {
