@@ -19,7 +19,10 @@ function isRTL(char) {
 // A function that sets the writing direction and text alignment of an element
 function setDirection(element, dir) {
   element.style.direction = dir; // Set the direction attribute
-  element.style.textAlign = "start"; // Set the text alignment to start
+  // Check if the current text alignment is right or left
+  if (element.style.textAlign === "right" || element.style.textAlign === "left") {
+    element.style.textAlign = "start"; // Set the text alignment to start
+  }
   console.log(`Direction switched to ${dir}`); // Log to the console
 }
 
